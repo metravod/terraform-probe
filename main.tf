@@ -10,7 +10,7 @@ provider "yandex" {
   token     = var.yc_token
   cloud_id  = var.yc_cloud_id
   folder_id = var.yc_folder_id
-  zone = "ru-central1-a"
+  zone = var.yc_zone
 }
 
 resource "yandex_compute_instance" "vm-1" {
